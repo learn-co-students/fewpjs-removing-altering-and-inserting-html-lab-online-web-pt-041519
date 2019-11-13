@@ -1,7 +1,10 @@
 // Write your code here!
 
-document.querySelector('main#main').remove();
+// remove main#main
+let main = document.getElementById('main')
+document.body.removeChild(main)
 
-let newHeader = document.createElement('h1');
-newHeader.id = "victory";
-newHeader.innerHTML = 'Ricky is the champion';
+// new header -> creates h1
+let newHeader = document.createElement('h1')
+newHeader.id = 'victory'
+newHeader.innerHTML = "Ricky is the champion"
